@@ -5,7 +5,10 @@
 /logs/*
 /tmp/*
 /vendor/*
-
+/webroot/css/*
+/webroot/js/*
+/webroot/img/*
+/tests
 # OS generated files #
 ######################
 .DS_Store

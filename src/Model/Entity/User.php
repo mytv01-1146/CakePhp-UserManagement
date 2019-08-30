@@ -4,17 +4,6 @@ namespace App\Model\Entity;
 
 use Cake\ORM\Entity;
 
-/**
- * User Entity
- *
- * @property int $id
- * @property string $full_name
- * @property string $address
- * @property \Cake\I18n\FrozenDate $birth
- * @property int $account_id
- *
- * @property \App\Model\Entity\Account $account
- */
 class User extends Entity
 {
     /**

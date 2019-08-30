@@ -4,16 +4,6 @@ namespace App\Model\Entity;
 
 use Cake\ORM\Entity;
 
-/**
- * Account Entity
- *
- * @property int $id
- * @property string $user_name
- * @property string $password
- * @property int $role
- *
- * @property \App\Model\Entity\User[] $users
- */
 class Account extends Entity
 {
     /**
@@ -32,11 +22,6 @@ class Account extends Entity
         'users' => true,
     ];
 
-    /**
-     * Fields that are excluded from JSON versions of the entity.
-     *
-     * @var array
-     */
     protected $_hidden = [
         'password',
     ];
