@@ -19,7 +19,7 @@ environments:
         host: 'localhost'
         name: 'test_cake'
         user: 'root'
-        pass:
+        pass: ''
         port: 3306
         charset: utf8
 
