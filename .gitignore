@@ -9,6 +9,10 @@
 /webroot/js/*
 /webroot/img/*
 /tests
+# Node modules
+/node_modules/*
+
+
 # OS generated files #
 ######################
 .DS_Store

@@ -13,6 +13,8 @@
 
 ```bash
    composer install
+   npm install
+   gulp
 ```
 * Config Database
     * Create `.env` file in `config`, copy `.env.default` file to `.env`
@@ -52,7 +54,6 @@ php vendor/bin/phinx migrate
 ```
 php vendor/bin/phinx seed:run -e development
 ```
-  
   ## Installation
   * Now you can quickly check that our installation is correct, by checking the default home page. Before you can do
   that, you’ll need to start the development server:
