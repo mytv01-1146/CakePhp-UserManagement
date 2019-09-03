@@ -1,4 +1,4 @@
-##Note
+## Note
 * This direction is available for ubuntu.
 ## Requirement
 * PHP >= 7.3
@@ -6,8 +6,7 @@
 * Composer
 * CakePHP 3.8
 
-##Setup
-
+## Setup
 * Clone this project.
 * Move to project that you just cloned and open terminal
 * Run this command:
@@ -16,29 +15,39 @@
    composer install
 ```
 * Config Database
-    * Go to config/app.php and replace the values in the Datasources.default array with those that apply to your setup.
-    * A sample completed configuration array might look something like the following:
-    ```php
-    <?php
-    return [
-        // More configuration above.
-        'Datasources' => [
-            'default' => [
-                'className' => 'Cake\Database\Connection',
-                'driver' => 'Cake\Database\Driver\Mysql',
-                'persistent' => false,
-                'host' => 'localhost',
-                'username' => 'cakephp',
-                'password' => 'AngelF00dC4k3~',
-                'database' => 'cake_cms',
-                'encoding' => 'utf8mb4',
-                'timezone' => 'UTC',
-                'cacheMetadata' => true,
-            ],
-        ],
-        // More configuration below.
-    ];
+    * Create `.env` file in `config`, copy `.env.default` file to `.env`
+    * Then replace the values with those that apply to your setup.
+    * Example:
     ```
+    export APP_NAME="__APP_NAME__"
+    export DEBUG="true"
+    export APP_ENCODING="UTF-8"
+    export APP_DEFAULT_LOCALE="en_US"
+    export APP_DEFAULT_TIMEZONE="UTC"
+    export SECURITY_SALT="__SALT__"
+    export DB_HOST="localhost"
+    export DB_USER="root"
+    export DB_PASSWORD=""
+    export DB_NAME="test_cake"
+    ```
+ * You also must config Database on `phinx.yml` file to use migration.
+ * Open file `phinx.yml` and replace the values in the `developemt` with those that you has applied above.
+
+ * A sample completed configuration might look something like the following:
+ ```
+development:
+        adapter: mysql
+        host: localhost
+        name: test_cake
+        user: root
+        pass: ''
+        port: 3306
+        charset: utf8
+```
+* Now you can create tables of database by running this command
+ ```
+php vendor/bin/phinx migrate
+``` 
   
   ## Installation
   * Now you can quickly check that our installation is correct, by checking the default home page. Before you can do
