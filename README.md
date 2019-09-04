@@ -48,6 +48,10 @@ development:
  ```
 php vendor/bin/phinx migrate
 ``` 
+* To use this application, you need some sample data. Run the following comment to seed data.
+```
+php vendor/bin/phinx seed:run -e development
+```
   
   ## Installation
   * Now you can quickly check that our installation is correct, by checking the default home page. Before you can do
