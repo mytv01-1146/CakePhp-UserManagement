@@ -8,6 +8,5 @@ class RegistersController extends AppController
 {
     public function register()
     {
-        
     }
 }

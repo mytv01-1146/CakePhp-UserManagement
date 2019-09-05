@@ -25,12 +25,12 @@ const elixir = require('cakephp3-elixir');
  | file for our application, as well as publishing vendor resources.
  |
  */
-elixir(function(mix) {
+elixir(function (mix) {
     mix.copy([
-        'node_modules/bootstrap/dist/css/bootstrap.min.css'
+        'node_modules/bootstrap/dist/css/bootstrap.min.css',
     ], 'webroot/css/bootstrap.css');
     mix.copy([
-        'node_modules/bootstrap/dist/js/bootstrap.min.js', 
+        'node_modules/bootstrap/dist/js/bootstrap.min.js',
         'node_modules/jquery/dist/jquery.min.js'
     ], 'webroot/js/jquery.bootstrap.js');
     mix.styles([''], 'webroot/css/custom.css');

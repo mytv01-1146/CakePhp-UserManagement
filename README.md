@@ -5,16 +5,19 @@
 * MySql
 * Composer
 * CakePHP 3.8
+* npm
+* Nodejs <= 10
+* Gulp CLI
 
 ## Setup
 * Clone this project.
 * Move to project that you just cloned and open terminal
-* Run this command:
+* Run these commands:
 
 ```bash
-   composer install
-   npm install
-   gulp
+   $ composer install
+   $ npm install
+   $ gulp
 ```
 * Config Database
     * Create `.env` file in `config`, copy `.env.default` file to `.env`
@@ -32,6 +35,7 @@
     export DB_PASSWORD=""
     export DB_NAME="test_cake"
     ```
+    * Then create a new file `app.php` in `config` , copy `app.default.php` file into `app.php`
  * You also must config Database on `phinx.yml` file to use migration.
  * Open file `phinx.yml` and replace the values in the `developemt` with those that you has applied above.
 
