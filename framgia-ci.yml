@@ -3,14 +3,8 @@ build:
   general_test:
     image: framgiaciteam/laravel-workspace:latest
     prepare:
-      - yarn install
       - framgia-ci run --logs
 test:
-  eslint:
-    ignore: false
-    command: eslint --format=checkstyle
-      --output-file=.framgia-ci-reports/eslint.xml
-      src/htdocs/scripts/app/ --ext .js
   phpcs:
     ignore: false
     command: echo '' | phpcs --standard=./phpcs_ruleset.xml --report-checkstyle=.framgia-ci-reports/phpcs.xml
