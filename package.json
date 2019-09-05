@@ -6,8 +6,11 @@
   },
   "devDependencies": {
     "bootstrap": "*",
-    "gulp": "^3.9.1",
-    "jquery": "^3.1.0",
-    "cakephp3-elixir": "^1.0.5"
+    "cakephp3-elixir": "^1.0.5",
+    "gulp": "*",
+    "jquery": "^3.1.0"
+  },
+  "dependencies": {
+    "popper.js": "^1.15.0"
   }
 }
